@@ -4,8 +4,7 @@
 
 <title> My Portfolio</title>
 
-<xml>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
 <body>
@@ -22,33 +21,39 @@
   
         
                <a href="#Home"><home> Home</home></a> 
-               <a href="#About"><about>About </about></a>
-                <a href="#Skills"><skills>Skills </skills></a>
-                <a href="#Contact"><contact>Contact</contact> </a>
+               <a href="#aboutme"><about>About </about></a>
+                <a href="#skills"><skills>Skills </skills></a>
+                <a href="#Contact" id="myContact"><contact>Contact</contact> </a>
           
         </div>
     </nav>
 
 
-    <div class="column-1">
+    <div class="column-1" id="Home" >
 
 
-    <div class="introduce">
+    <div class="introduce" >
 
       <p class="hello">Hello I'am</p>
       <h2 class="name">  <name>AL JON JIMENEZ</name> </h2>
 
     </div>
+    <img  class="photo" src="https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1708214400&semt=ais">
 
+
+    
     <div class="webdev"> 
         <p>WEB</p>
         <p style="margin-left: 20%; margin-top:-85px ;"> DEVELOPER</p>
+        
     </div>
     <div class="introductory">
+      
     <p> <intro>
         A freelancer developer and CTO at a digital marketing agency, and formerly a designer at Infinity Development,
 I create web applications and graphical user interfaces. </p>
 </intro>
+
 
 </div>
 <button> HIRE ME  </button>
@@ -60,7 +65,7 @@ I create web applications and graphical user interfaces. </p>
 
 
 
-    <div class="About_me"> 
+    <div class="About_me" id="aboutme"> 
         <div class="text"><h2><about> About me </about> </h2></div>
         
         <div class="column_flex">
@@ -88,7 +93,7 @@ I create web applications and graphical user interfaces. </p>
 
     
 
-    <div class="skills"> 
+    <div class="skills" id="skills"> 
         <div class="text"><h2><skills> Skills </skills> </h2></div>
         
         <div class="column_flex">
@@ -167,10 +172,53 @@ I create web applications and graphical user interfaces. </p>
 </div>
 
 
+</div>
 
+<div id="myModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<div class="infosec">
+<p><location>   <i class="fa fa-home"></i> Lawa Obando Bulacan</location> </p>
+<p><number><i class="fa fa-phone-square"></i>  09357787583</number> </p>
+<p> <email><i class="fa fa-envelope"></i> aljonjimenez091200@gmail.com</email></p>
+
+<p> Email me on Google</p>
+</div>
+
+
+
+
+  </div>
+  </div>
 
 </div>
- 
+
+</div>
+
+
+ <script>
+
+var modal = document.getElementById("myModal");
+
+var show = document.getElementById("myContact");
+
+var span = document.getElementsByClassName("close")[0];
+
+show.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function(){
+  modal.style.display = "none";
+}
+
+window.onclick = function(event){
+  if(event.target == modal){
+    modal.style.display = "none";
+  }
+}
+
+ </script>
    
 
     
